@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OopExample
+namespace OOP.OopDescriptions
 {
     public interface IGetDescription
     {
