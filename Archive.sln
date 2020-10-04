@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "Encapsulat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction", "Abstraction\Abstraction.csproj", "{E5536328-5DFD-41E9-9A69-132AF66FE550}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccessModifiers", "AccessModifiers", "{C7D73A04-7EAF-4EC4-B7ED-11D433FD9B31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifier", "AccessModifier\AccessModifier.csproj", "{CD397226-2DCA-4D52-B7A9-08204EE037F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{E5536328-5DFD-41E9-9A69-132AF66FE550}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5536328-5DFD-41E9-9A69-132AF66FE550}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5536328-5DFD-41E9-9A69-132AF66FE550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD397226-2DCA-4D52-B7A9-08204EE037F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD397226-2DCA-4D52-B7A9-08204EE037F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD397226-2DCA-4D52-B7A9-08204EE037F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD397226-2DCA-4D52-B7A9-08204EE037F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +59,7 @@ Global
 		{5D10C723-1C66-40A7-A258-EA6B4C169AA0} = {2A8A13D8-4739-4C00-837C-F9B65413A26A}
 		{51441B75-C7DD-418B-8AFE-2E063106E93E} = {2A8A13D8-4739-4C00-837C-F9B65413A26A}
 		{E5536328-5DFD-41E9-9A69-132AF66FE550} = {2A8A13D8-4739-4C00-837C-F9B65413A26A}
+		{CD397226-2DCA-4D52-B7A9-08204EE037F7} = {C7D73A04-7EAF-4EC4-B7ED-11D433FD9B31}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1ACF96E-4CB9-4949-A5AA-2E774DD5D131}
