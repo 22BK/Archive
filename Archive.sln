@@ -7,17 +7,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OopDescriptions", "OopDescr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP", "OOP", "{2A8A13D8-4739-4C00-837C-F9B65413A26A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{4921516A-FFF5-4474-B4BD-6ECDDC77893D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{4921516A-FFF5-4474-B4BD-6ECDDC77893D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{5D10C723-1C66-40A7-A258-EA6B4C169AA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{5D10C723-1C66-40A7-A258-EA6B4C169AA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{51441B75-C7DD-418B-8AFE-2E063106E93E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{51441B75-C7DD-418B-8AFE-2E063106E93E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction", "Abstraction\Abstraction.csproj", "{E5536328-5DFD-41E9-9A69-132AF66FE550}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abstraction", "Abstraction\Abstraction.csproj", "{E5536328-5DFD-41E9-9A69-132AF66FE550}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccessModifiers", "AccessModifiers", "{C7D73A04-7EAF-4EC4-B7ED-11D433FD9B31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifier", "AccessModifier\AccessModifier.csproj", "{CD397226-2DCA-4D52-B7A9-08204EE037F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessModifier", "AccessModifier\AccessModifier.csproj", "{CD397226-2DCA-4D52-B7A9-08204EE037F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rabbit", "Rabbit", "{43FCDD10-3DEA-4F76-8C36-749ABCAEC4A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMq", "RabbitMq\RabbitMq.csproj", "{C98F511A-0782-4C23-8677-B48A009D7E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqClient", "RabbitMqClient\RabbitMqClient.csproj", "{A1C95853-53E4-42AE-B435-2483A52E1DA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +55,14 @@ Global
 		{CD397226-2DCA-4D52-B7A9-08204EE037F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD397226-2DCA-4D52-B7A9-08204EE037F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD397226-2DCA-4D52-B7A9-08204EE037F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C98F511A-0782-4C23-8677-B48A009D7E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C98F511A-0782-4C23-8677-B48A009D7E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C98F511A-0782-4C23-8677-B48A009D7E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C98F511A-0782-4C23-8677-B48A009D7E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1C95853-53E4-42AE-B435-2483A52E1DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1C95853-53E4-42AE-B435-2483A52E1DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1C95853-53E4-42AE-B435-2483A52E1DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1C95853-53E4-42AE-B435-2483A52E1DA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +74,8 @@ Global
 		{51441B75-C7DD-418B-8AFE-2E063106E93E} = {2A8A13D8-4739-4C00-837C-F9B65413A26A}
 		{E5536328-5DFD-41E9-9A69-132AF66FE550} = {2A8A13D8-4739-4C00-837C-F9B65413A26A}
 		{CD397226-2DCA-4D52-B7A9-08204EE037F7} = {C7D73A04-7EAF-4EC4-B7ED-11D433FD9B31}
+		{C98F511A-0782-4C23-8677-B48A009D7E8F} = {43FCDD10-3DEA-4F76-8C36-749ABCAEC4A6}
+		{A1C95853-53E4-42AE-B435-2483A52E1DA0} = {43FCDD10-3DEA-4F76-8C36-749ABCAEC4A6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1ACF96E-4CB9-4949-A5AA-2E774DD5D131}
