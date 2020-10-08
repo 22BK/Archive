@@ -22,6 +22,18 @@ namespace HotelFinder.API
             services.AddMvc();
             services.AddSingleton<IHotelService, HotelManager>();
             services.AddSingleton<IHotelRepository, HotelRepository>();
+            services.AddSwaggerDocument(config=> {
+                config.PostProcess = (doc => {
+                    doc.Info.Title = ("All Hotels Api");
+                    doc.Info.Version = "1.0.1";
+                    doc.Info.Contact = new NSwag.OpenApiContact()
+                    {
+                        Name = "Bugra KIRMAN",
+                        Url= "https://github.com/22BK/Archive/tree/master/HotelFinder.API"
+                    };
+                });
+            });
+
 
         }
 
@@ -32,6 +44,9 @@ namespace HotelFinder.API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
 
             app.UseMvc(routes =>
             {
