@@ -37,8 +37,9 @@ namespace HotelFinder.API.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        [HttpGet]
+        [Route("[action]/{id}")]//[Route("GetHotelById/{id}")] api/hotels/gethotelbyid/2
+        public IActionResult GetHotelById(int id)
         {
             var hotel = _hotelService.GetHotelById(id);
             if (hotel != null)
@@ -49,12 +50,38 @@ namespace HotelFinder.API.Controllers
         }
 
         /// <summary>
+        /// Get Hotel By Name
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("[action]/{name}")] //api/hotels/gethotelbyname/Hilton
+        public IActionResult GetHotelByName(string name)
+        {
+            var hotel = _hotelService.GetHotelByName(name);
+            if (hotel != null)
+            {
+                return Ok(hotel);
+            }
+            return NotFound();
+                
+        }
+
+        [HttpGet]
+        [Route("[action]")] //with no parameters api/hotels/gethotelbyIdAndName?id=2&name=Hilton
+        public IActionResult GetHotelByIdAndName(int id, string name)
+        {
+                return Ok();
+        }
+
+        /// <summary>
         /// Create Hotel
         /// </summary>
         /// <param name="hotel"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult Post([FromBody]Hotel hotel)
+        [Route("[action]")]
+        public IActionResult CreateHotel([FromBody]Hotel hotel)
         {
             if (ModelState.IsValid)
             {
@@ -71,7 +98,8 @@ namespace HotelFinder.API.Controllers
         /// <param name="hotel"></param>
         /// <returns></returns>
         [HttpPut]
-        public IActionResult Put([FromBody]Hotel hotel)
+        [Route("[action]")]
+        public IActionResult UpdateHotel([FromBody]Hotel hotel)
         {
             if (_hotelService.GetHotelById(hotel.Id)!=null)
             {
@@ -84,8 +112,9 @@ namespace HotelFinder.API.Controllers
         /// Delete Hotel
         /// </summary>
         /// <param name="id"></param>
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        [HttpDelete]
+        [Route("[action]/{id}")]
+        public IActionResult DeleteHotel(int id)
         {
             if (_hotelService.GetHotelById(id) != null)
             {

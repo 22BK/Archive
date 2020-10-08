@@ -11,6 +11,8 @@ namespace HotelFinder.DAL.Abstract
 
         Hotel GetHotelById(int id);
 
+        Hotel GetHotelByName(String name);
+
         Hotel CreateHotel(Hotel hotel);
 
         Hotel UpdateHotel(Hotel hotel);
